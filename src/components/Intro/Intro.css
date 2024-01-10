@@ -1,0 +1,85 @@
+.intro-container {
+    padding: 30px;
+    background-color: #fafafa;
+}
+
+.intro-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar-container {
+    max-height: 80px;
+    max-width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 2.5px 2.5px 5px #9ca3af;
+}
+
+.avatar {
+    width: 100%;
+}
+
+.today-summary div, .transaction-section div {
+    margin: 10px 0;
+}
+
+.today-summary h4 {
+    font-size: 20px;
+}
+
+.today-summary p {
+    font-size: 14px;
+}
+
+.today-summary, .transaction-section {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.today-summary h6, .transaction-section h6 {
+    font-size: 16px;
+    
+}
+
+.today-summary h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.today-summary h5 {
+    font-size: 16px;
+}
+
+.today-summary p, .transaction-section p {
+    font-size: 12px;
+    color: #9ca3af;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+select {
+    padding: 8px;
+    font-size: 18px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+select option {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.transaction-section hr {
+    opacity: 30%;
+    margin: 10px 0 20px 0;
+}
+
+.transaction-section h4 {
+    font-family: sans-serif;
+    font-size: 14px;
+}

@@ -13,17 +13,17 @@ function Menu() {
   return (
     <div className="menu">
         <ul className='menu-list-container'>
-            <li className='menu-list butterfly'><img width={25} src={butterflyIcon} alt="butterflyIcon" /></li>
+            <li className='menu-list butterfly menu-one'><img width={25} src={butterflyIcon} alt="butterflyIcon" /></li>
             <li className='menu-list'><SearchOutlinedIcon /></li>
         </ul>
-        <ul className='menu-list-container second-menu'>
+        <ul className='menu-list-container menu-two'>
             <li className='menu-list selected'><HomeOutlinedIcon /></li>
             <li className='menu-list'><NewspaperOutlinedIcon /></li>
             <li className='menu-list'><FormatListBulletedOutlinedIcon /></li>
             <li className='menu-list'><PermIdentityOutlinedIcon /></li>
         </ul>
-        <ul className='menu-list-container'>
-            <li className='menu-list'><NotificationsNoneIcon/></li>
+        <ul className='menu-list-container menu-three'>
+            <li className='menu-list'><NotificationsNoneIcon/><span className='blue-dot'></span></li>
             <li className='menu-list'><LogoutIcon /></li>
         </ul>
     </div>
