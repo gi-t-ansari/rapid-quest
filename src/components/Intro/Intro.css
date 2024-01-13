@@ -1,6 +1,7 @@
 .intro-container {
     padding: 30px;
     background-color: #fafafa;
+    flex-basis: 21%;
 }
 
 .intro-header {
@@ -10,8 +11,8 @@
 }
 
 .avatar-container {
-    max-height: 80px;
-    max-width: 80px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 2.5px 2.5px 5px #9ca3af;
@@ -56,10 +57,10 @@
     font-size: 12px;
     color: #9ca3af;
     font-family: sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
-select {
+.today-summary select {
     padding: 8px;
     font-size: 18px;
     color: var(--color-white);
@@ -69,7 +70,7 @@ select {
     cursor: pointer;
 }
 
-select option {
+.today-summary select option {
     background-color: var(--color-white);
     color: var(--color-black);
 }
@@ -82,4 +83,31 @@ select option {
 .transaction-section h4 {
     font-family: sans-serif;
     font-size: 14px;
+}
+
+@media only screen and (max-width: 1025px){
+
+    .intro-container {
+        padding: 30px;
+    }
+
+    .intro-header {
+        display: block;
+    }
+
+    .avatar-container {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .today-summary, .transaction-section {
+        padding: 0;
+    }
+
+    .today-summary h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
 }

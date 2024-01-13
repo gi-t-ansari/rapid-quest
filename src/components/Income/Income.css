@@ -1,0 +1,215 @@
+.income-container {
+    flex-basis: 53%;
+    padding: 40px 50px;
+}
+
+.income-section-header {
+    width: 100%;
+}
+
+.income-section-header > p{
+    color: #6f5fff;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.income-section-header > h4 {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.income-summary {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.income-summary div {
+    flex-basis: 25%;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-bottom: 2px solid #B0A7FF;
+}
+
+.income-summary div h3 {
+    font-size: 22px;
+    margin: 0px;
+}
+
+.income-summary div p {
+    font-size: 12px;
+    color: #9ca3af;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.chart-container {
+    max-height: 250px;
+    max-width: 100%;
+    position: relative;
+    margin: 20px 0px;
+}
+
+.chart-header {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.chart-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent;
+    z-index: 2;
+    width: 100%;
+}
+
+.chart-summary div {
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ellipse {
+    display: inline-block;
+    height: 10px;
+    width: 15px;
+    border-radius: 5px;
+}
+
+.employee-ellipse {
+    background: #002c61;
+}
+
+.employer-ellipse {
+    background: #004b8f;
+}
+
+.total-ellipse {
+    background: #006bc9;
+}
+
+.chart-summary div p span {
+    font-weight: 500;
+    color: #9ca3af;
+}
+
+.chart {
+    max-width: 100%;
+    max-height: 250px;
+    margin-top: -20px;
+    
+}
+
+.income-footer {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.income-footer h5 {
+    font-size: 18px;
+}
+
+.income-footer p {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #9ca3af;
+    letter-spacing: 0.5px;
+    
+}
+
+.income-footer > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.income-footer > div > div {
+    text-align: center;
+    
+}
+
+.income-footer > div > div h6 {
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+
+.income-footer form {
+    font-family: sans-serif;
+    flex-basis: 25%;
+}
+
+.income-footer form hr {
+    opacity: 30%;
+}
+
+#last-hr {
+    visibility: hidden;
+}
+
+.income-footer form label {
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.income-footer form select  {
+    margin: 10px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+.income-footer > div > div {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 1025px){
+    .income-summary div {
+        flex-basis: 28%;
+    }
+
+    .income-summary div h3 {
+        font-size: 20px;
+    }
+
+    .chart-summary div p span {
+        display: block;
+    }
+
+    .chart {
+        margin: 0;
+    }
+
+    .income-footer {
+        margin-top: -10px;
+    }
+
+    .income-footer > div {
+        display: block;
+    }
+
+    #last-hr {
+        visibility: visible;
+        margin-bottom: 10px;
+    }
+
+    .ellipse {
+        margin-right: 10px;
+    }
+}
+
+
