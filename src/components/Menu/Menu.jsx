@@ -11,7 +11,8 @@ import "./Menu.css"
 
 function Menu() {
   return (
-    <div className="menu">
+    <>
+    <div className="menu1">
         <ul className='menu-list-container'>
             <li className='menu-list butterfly menu-one'><img width={25} src={butterflyIcon} alt="butterflyIcon" /></li>
             <li className='menu-list'><SearchOutlinedIcon /></li>
@@ -27,6 +28,22 @@ function Menu() {
             <li className='menu-list'><LogoutIcon /></li>
         </ul>
     </div>
+    <header className='menu-header'>
+      <ul>
+        <li className='header-list'><img width={25} src={butterflyIcon} alt="butterflyIcon" /></li>
+        <li className='header-list'><NotificationsNoneIcon/><span className='blue-dot'></span></li>
+      </ul>
+    </header>
+    <div className='menu2'>
+      <ul className='menu2-list-container'>
+        <li className='menu2-list'><HomeOutlinedIcon /></li>
+        <li className='menu2-list'><NewspaperOutlinedIcon /></li>
+        <li className='menu2-list'><FormatListBulletedOutlinedIcon /></li>
+        <li className='menu2-list'><PermIdentityOutlinedIcon /></li>
+        <li className='menu2-list'><SearchOutlinedIcon /></li>
+      </ul>
+    </div>
+    </>
   )
 }
 

@@ -1,5 +1,5 @@
 .income-container {
-    flex-basis: 53%;
+    flex-basis: 50%;
     padding: 40px 50px;
 }
 
@@ -108,16 +108,20 @@
     
 }
 
-.income-footer {
+.chart2 {
+    display: none;
+}
+
+.income-comparison {
     width: 100%;
     margin-top: 40px;
 }
 
-.income-footer h5 {
+.income-comparison h5 {
     font-size: 18px;
 }
 
-.income-footer p {
+.income-comparison p {
     font-family: sans-serif;
     font-size: 12px;
     color: #9ca3af;
@@ -125,7 +129,7 @@
     
 }
 
-.income-footer > div {
+.income-comparison > div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -133,23 +137,23 @@
     width: 100%;
 }
 
-.income-footer > div > div {
+.income-comparison > div > div {
     text-align: center;
     
 }
 
-.income-footer > div > div h6 {
+.income-comparison > div > div h6 {
     font-size: 14px;
     font-family: sans-serif;
     margin-top: 5px;
 }
 
-.income-footer form {
+.income-comparison form {
     font-family: sans-serif;
     flex-basis: 25%;
 }
 
-.income-footer form hr {
+.income-comparison form hr {
     opacity: 30%;
 }
 
@@ -157,19 +161,19 @@
     visibility: hidden;
 }
 
-.income-footer form label {
+.income-comparison form label {
     font-weight: 600;
     display: inline-block;
     margin-bottom: 15px;
 }
 
-.income-footer form select  {
+.income-comparison form select  {
     margin: 10px 0px;
     border: none;
     cursor: pointer;
 }
 
-.income-footer > div > div {
+.income-comparison > div > div {
     flex-basis: 60%;
     display: flex;
     justify-content: space-between;
@@ -194,11 +198,11 @@
         margin: 0;
     }
 
-    .income-footer {
+    .income-comparison {
         margin-top: -10px;
     }
 
-    .income-footer > div {
+    .income-comparison > div {
         display: block;
     }
 
@@ -212,4 +216,63 @@
     }
 }
 
+@media only screen and (max-width: 768px){
+    
+    .income-container {
+        flex-basis: 62%;
+    }
 
+}
+
+@media only screen and (max-width: 426px) {
+    .income-container {
+        flex-basis: 100%;
+    }
+
+    .income-container {
+        padding: 30px;
+    }
+
+    .income-summary {
+        flex-wrap: wrap;
+    }
+
+    .income-summary > div {
+        flex-basis: 45%;
+    }
+    
+
+    .income-summary > div:first-child {
+        flex-basis: 100%;
+    }
+
+    .income-summary div p {
+        letter-spacing: 0;
+    }
+
+    .chart-summary {
+        display: flex;
+    }
+
+    .chart-summary div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .chart-summary div p span {
+        font-size: 12px;
+    }
+
+    .chart1 {
+        display: none;
+    }
+
+    .chart2 {
+        display: block;
+    }
+
+    #income-comparison {
+        display: none;
+    }
+}

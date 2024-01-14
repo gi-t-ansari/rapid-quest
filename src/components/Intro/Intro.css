@@ -111,3 +111,49 @@
         font-weight: 600;
     }
 }
+
+@media only screen and (max-width: 768px){
+    .intro-container {
+        flex-basis: 30%;
+    }
+
+}
+
+@media only screen and (max-width: 426px) {
+    .intro-container {
+        flex-basis: 100%;
+        padding-top: 10px;
+    }
+
+    .intro-header {
+        display: flex;
+    }
+
+    .today-summary, .transaction-section {
+        padding: 10px 20px;
+    }
+
+    .today-summary span {
+        display: none;
+    }
+
+    .today-summary > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .today-summary > div {
+        flex-basis: 100%;
+    }
+
+    .today-summary select {
+        width: 100%;
+        text-align: center;
+        appearance: none;
+    }
+
+    .transaction-section > div > h4 {
+        font-size: 13px;
+    }
+}

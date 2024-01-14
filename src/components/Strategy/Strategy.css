@@ -1,5 +1,5 @@
 .strategy-container {
-    flex-basis: 21%;
+    flex-basis: 25%;
     background-color: var(--color-white);
     padding: 50px 20px;
 }
@@ -52,10 +52,14 @@
     font-size: 14px;
 }
 
-.strategy-container > div {
+#strategy-comparison {
+    display: none;
+}
+
+.strategy-container > div:last-child {
     width: 100%;
     background-color: #fafafa;
-    padding: 10px 20px;
+    padding: 10px;
     font-family: sans-serif;
     border-left: 2px solid #6453FE;
 }
@@ -73,5 +77,38 @@
 @media only screen and (max-width: 1025px){
     .strategy-container {
         padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .strategy-container {
+        flex-basis: 90%;
+        position: relative;
+        right: -10%;
+        padding: 30px;
+    }
+  }
+
+@media only screen and (max-width: 426px) {
+    #strategy-comparison {
+        display: block;
+    }
+
+    .strategy-container {
+        padding: 30px;
+        position: static;
+        flex-basis: 100%;
+    }
+    
+    .strategy-container > article {
+        margin-top: 20px;
+    }
+
+    .strategy-container > div:last-child {
+        display: none;
+    }
+
+    .help-section > a {
+        display: none;
     }
 }
