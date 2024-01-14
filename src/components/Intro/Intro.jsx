@@ -38,7 +38,7 @@ function Intro() {
             <p>Total Interest</p>
           </div>
         </div>
-        <select onChange={handleChange}>
+        <select onChange={handleChange} value={preference}>
           <option>I want to</option>
           <option value="save">Save</option>
           <option value="invest">Invest</option>

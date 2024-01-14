@@ -111,4 +111,8 @@
     .help-section > a {
         display: none;
     }
+
+    form > select {
+        background-color: var(--color-white);
+    }
 }
