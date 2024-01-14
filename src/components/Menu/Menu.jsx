@@ -7,6 +7,7 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import LogoutIcon from '@mui/icons-material/Logout';
 import butterflyIcon from "../../assets/butterfly.png";
+// import { Link } from 'react-router-dom';
 import "./Menu.css"
 
 function Menu() {
@@ -21,7 +22,9 @@ function Menu() {
             <li className='menu-list selected'><HomeOutlinedIcon /></li>
             <li className='menu-list'><NewspaperOutlinedIcon /></li>
             <li className='menu-list'><FormatListBulletedOutlinedIcon /></li>
-            <li className='menu-list'><PermIdentityOutlinedIcon /></li>
+            <li className='menu-list'>
+              <PermIdentityOutlinedIcon />
+            </li>
         </ul>
         <ul className='menu-list-container menu-three'>
             <li className='menu-list'><NotificationsNoneIcon/><span className='blue-dot'></span></li>
@@ -38,7 +41,10 @@ function Menu() {
       <ul className='menu2-list-container'>
         <li className='menu2-list'><HomeOutlinedIcon /></li>
         <li className='menu2-list'><NewspaperOutlinedIcon /></li>
-        <li className='menu2-list'><FormatListBulletedOutlinedIcon /></li>
+        <li className='menu2-list'>
+            {/* <Link></Link> */}
+            <FormatListBulletedOutlinedIcon />
+          </li>
         <li className='menu2-list'><PermIdentityOutlinedIcon /></li>
         <li className='menu2-list'><SearchOutlinedIcon /></li>
       </ul>

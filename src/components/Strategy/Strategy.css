@@ -1,5 +1,5 @@
 .strategy-container {
-    flex-basis: 25%;
+    flex-basis: 23%;
     background-color: var(--color-white);
     padding: 50px 20px;
 }
@@ -89,15 +89,29 @@
     }
   }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 600px) {
+
     #strategy-comparison {
         display: block;
+    }
+
+    #strategy-comparison > button {
+        color:  var(--icon-color);
+        position: absolute;
+        right: 0;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: transparent;
     }
 
     .strategy-container {
         padding: 30px;
         position: static;
         flex-basis: 100%;
+        margin-top: 50px;
     }
     
     .strategy-container > article {

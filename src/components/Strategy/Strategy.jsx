@@ -2,11 +2,16 @@ import React from "react";
 import "./Strategy.css";
 import Slider from "@mui/material/Slider";
 import Comparison from "../Comparison/Comparison";
+import CloseIcon from '@mui/icons-material/Close';
+
 
 function Strategy() {
   return (
     <section className="strategy-container">
       <div id="strategy-comparison">
+        <button>
+            <CloseIcon />
+        </button>
         <Comparison />
       </div>
       <article>

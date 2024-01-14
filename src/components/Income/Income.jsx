@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Income.css";
 import Chart1 from "../Chart1/Chart1";
 import Chart2 from "../Chart2/Chart2";
@@ -6,7 +6,6 @@ import Comparison from "../Comparison/Comparison";
 
 function Income() {
   
-
   return (
     <section className="income-container">
       <header className="income-section-header">

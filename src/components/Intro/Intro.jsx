@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Intro.css";
 import avatar from "../../assets/avatar.jpg";
-import { InputLabel, FormControl, Select, MenuItem } from "@mui/material";
 
 function Intro() {
   const [preference, setPreference] = useState("");
